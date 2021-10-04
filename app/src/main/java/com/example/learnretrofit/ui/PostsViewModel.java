@@ -20,7 +20,7 @@ public class PostsViewModel extends ViewModel {
 
     public void getPosts(){
 
-     Call<List<PostModel>> listCall= PostsClient.getINSTANCE().getpost();
+     Call<List<PostModel>> listCall= PostsClient.getINSTANCE().getClientService().getPosts();
 
      listCall.enqueue(new Callback<List<PostModel>>() {
          @Override

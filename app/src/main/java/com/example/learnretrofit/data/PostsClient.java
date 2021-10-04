@@ -33,9 +33,8 @@ public class PostsClient {
         return INSTANCE;
     }
 
-    public Call<List<PostModel>> getpost(){
-
-        return postInterface.getPosts();
+    public PostInterface getClientService(){
+        return postInterface;
     }
 
 }
